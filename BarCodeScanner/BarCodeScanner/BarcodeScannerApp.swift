@@ -1,6 +1,6 @@
 //
-//  BarCodeScannerApp.swift
-//  BarCodeScanner
+//  BarcodeScannerApp.swift
+//  BarcodeScanner
 //
 //  Created by Kody Buss on 2/18/24.
 //
