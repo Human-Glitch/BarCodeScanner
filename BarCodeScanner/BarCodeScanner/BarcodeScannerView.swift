@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BarcodeScannerView: View {
     var body: some View {
 		VStack(spacing: 20) {
 			HStack{
@@ -48,5 +48,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    BarcodeScannerView()
 }
