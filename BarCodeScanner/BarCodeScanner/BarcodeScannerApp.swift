@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BarCodeScannerApp: App {
+struct BarcodeScannerApp: App {
     var body: some Scene {
         WindowGroup {
             BarcodeScannerView()
