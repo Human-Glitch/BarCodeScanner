@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E757C4DC2B8326A100298DA4 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757C4DB2B8326A100298DA4 /* ScannerVC.swift */; };
+		E757C4DE2B870FA700298DA4 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757C4DD2B870FA700298DA4 /* ScannerView.swift */; };
 		E7B79CFA2B8311E7005B2955 /* BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CF92B8311E7005B2955 /* BarcodeScannerApp.swift */; };
 		E7B79CFC2B8311E7005B2955 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B79CFB2B8311E7005B2955 /* BarcodeScannerView.swift */; };
 		E7B79CFE2B8311E8005B2955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B79CFD2B8311E8005B2955 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E757C4DB2B8326A100298DA4 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		E757C4DD2B870FA700298DA4 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		E7B79CF62B8311E7005B2955 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B79CF92B8311E7005B2955 /* BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerApp.swift; sourceTree = "<group>"; };
 		E7B79CFB2B8311E7005B2955 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				E7B79CFD2B8311E8005B2955 /* Assets.xcassets */,
 				E7B79CFF2B8311E8005B2955 /* BarcodeScanner.entitlements */,
 				E7B79D002B8311E8005B2955 /* Preview Content */,
+				E757C4DB2B8326A100298DA4 /* ScannerVC.swift */,
+				E757C4DD2B870FA700298DA4 /* ScannerView.swift */,
 			);
 			path = BarcodeScanner;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E757C4DC2B8326A100298DA4 /* ScannerVC.swift in Sources */,
+				E757C4DE2B870FA700298DA4 /* ScannerView.swift in Sources */,
 				E7B79CFC2B8311E7005B2955 /* BarcodeScannerView.swift in Sources */,
 				E7B79CFA2B8311E7005B2955 /* BarcodeScannerApp.swift in Sources */,
 			);
@@ -274,6 +282,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) would like to access camera to scan barcodes!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -292,7 +301,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bussboy.BarcodeScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,6 +322,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) would like to access camera to scan barcodes!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -330,7 +341,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bussboy.BarcodeScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
