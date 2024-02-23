@@ -8,27 +8,35 @@
 import SwiftUI
 
 struct BarcodeScannerView: View {
-	@State private var scannedCode: String = ""
+	
+	@StateObject var viewModel = BarCodeScannerViewModel()
 	
 	var body: some View {
 		NavigationStack{
 			VStack(spacing: 20) {
 				Spacer()
 				
-				ScannerView(scannedCode: $scannedCode)
+				ScannerView(scannedCode: $viewModel.scannedCode, alertItem: $viewModel.alertItem)
 					.frame(maxWidth: .infinity, maxHeight: 300)
 				
 				Label("Scanned Barcode:", systemImage: "barcode.viewfinder")
 					.font(.title)
 				
-				Text(scannedCode.isEmpty ? "Not Yet Scanned" : scannedCode)
+				Text(viewModel.statusText)
 					.font(.largeTitle)
-					.foregroundStyle(scannedCode.isEmpty ? .red : .green)
+					.foregroundStyle(viewModel.statusTextColor)
 					.bold()
 				
 				Spacer()
 			}
 			.navigationTitle("Barcode Scanner")
+			.alert(item: $viewModel.alertItem) { alertItem in
+				Alert(
+					title: Text(alertItem.title),
+					message: Text(alertItem.message),
+					dismissButton: alertItem.dismissButton)
+				
+			}
 		}
 	}
 }

@@ -10,6 +10,7 @@ import SwiftUI
 // UIViewController -> Coordinator -> Swift UI
 struct ScannerView: UIViewControllerRepresentable {
 	@Binding var scannedCode: String // allows the bar code to reach the ui
+	@Binding var alertItem: AlertItem?
 	
 	func makeUIViewController(context: Context) -> ScannerVC {
 		ScannerVC(scannerDelegate: context.coordinator)
@@ -34,11 +35,13 @@ struct ScannerView: UIViewControllerRepresentable {
 		}
 		
 		func didSurface(error: CameraError) {
-			print(error.rawValue)
+			switch error{
+				case .invalidScanValue:
+					scannerView.alertItem = AlertContext.invalidScannedType
+					
+				case .invalidDeviceInput:
+					scannerView.alertItem = AlertContext.invalidDeviceInput
+			}
 		}
 	}
-}
-
-#Preview {
-	ScannerView(scannedCode: .constant(""))
 }
