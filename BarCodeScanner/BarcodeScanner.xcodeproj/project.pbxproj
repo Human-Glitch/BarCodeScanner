@@ -41,6 +41,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E757C4E32B8850CE00298DA4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E757C4E72B88516900298DA4 /* BarcodeScanner */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E757C4E42B8850E200298DA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E757C4E52B8850EE00298DA4 /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E757C4E52B8850EE00298DA4 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				E757C4DB2B8326A100298DA4 /* ScannerVC.swift */,
+				E757C4DD2B870FA700298DA4 /* ScannerView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		E757C4E62B88510600298DA4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E757C4DF2B88449100298DA4 /* Alert.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E757C4E72B88516900298DA4 /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				E757C4E12B8844DF00298DA4 /* BarCodeScannerViewModel.swift */,
+				E7B79CFB2B8311E7005B2955 /* BarcodeScannerView.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
 		E7B79CED2B8311E7005B2955 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +102,13 @@
 		E7B79CF82B8311E7005B2955 /* BarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				E757C4E62B88510600298DA4 /* Utilities */,
+				E757C4E42B8850E200298DA4 /* Views */,
+				E757C4E32B8850CE00298DA4 /* Screens */,
 				E7B79CF92B8311E7005B2955 /* BarcodeScannerApp.swift */,
-				E7B79CFB2B8311E7005B2955 /* BarcodeScannerView.swift */,
-				E757C4DF2B88449100298DA4 /* Alert.swift */,
 				E7B79CFD2B8311E8005B2955 /* Assets.xcassets */,
 				E7B79CFF2B8311E8005B2955 /* BarcodeScanner.entitlements */,
 				E7B79D002B8311E8005B2955 /* Preview Content */,
-				E757C4DB2B8326A100298DA4 /* ScannerVC.swift */,
-				E757C4DD2B870FA700298DA4 /* ScannerView.swift */,
-				E757C4E12B8844DF00298DA4 /* BarCodeScannerViewModel.swift */,
 			);
 			path = BarcodeScanner;
 			sourceTree = "<group>";
